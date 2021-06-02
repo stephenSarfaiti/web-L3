@@ -1,3 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
 html {
-    background-color: red;
+    background-color: grey;
+   
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    align-items: center;
+}
+
+nav a:hover{
+    color: lightblue;
+}
+
+.logo {
+    width: 10%;
+    justify-self: start;
+    margin: 0px 5%;
+}
+
+.navgrid {
+    justify-self: end;
+    width: 80%;
+}
+
+.navgrid a {
+    margin: 0px 5%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+    font-size: 24px;
+}
+
+.se1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    width: 80%;
+    margin: 0px auto;
+    min-height: 50vh;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+section h1 {
+    margin: 10px 5%;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 30px;
+}
+
+.promo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    width: 70%;
+}
+
+.line {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    border-right: 2px solid black;
+}
+
+.promo2 {
+    grid-column: 2;
+    grid-row: 3/4;
+    justify-self: center;
+    width: 70%;
+}
+
+section p {
+    place-self: center;
+    
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.p1 {
+    grid-row: 2/3;
+}
+
+.p2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.se2 {
+    display: grid;
+   
+    
+    width: 80%;
+    margin: 0px auto;
+    min-height: 50vh;
+    background-color: white;
+    padding: 10px;
+}
+
+#cartProducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    width: 30%;
+    
+}
+
+li {
+    width: 100%;
+    list-style: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+li img {
+    width: 100%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.cItems {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.itemCount {
+    color: red;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 900px) {
+    ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }
